@@ -1,15 +1,17 @@
 {
   "name": "yarn-berry-template",
   "version": "1.0.0",
-  "exports": "./index.ts",
+  "exports": "./src/index.ts",
+  "types": "./src/index.d.ts",
   "license": "MIT",
   "type": "module",
   "packageManager": "yarn@4.0.2",
   "scripts": {
-    "start": "yarn node --import tsx/esm ./index.ts",
+    "start": "yarn node --import tsx/esm ./start.ts",
     "od": "yarn outdated"
   },
   "devDependencies": {
+    "@types/node": "^20.11.5",
     "@yarnpkg/sdks": "^3.1.0",
     "tsx": "^4.7.0",
     "typescript": "^5.3.3"
