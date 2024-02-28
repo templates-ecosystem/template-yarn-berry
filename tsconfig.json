@@ -7,11 +7,11 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "module": "ESNext",
-    "moduleResolution": "node",
+    "moduleResolution": "Node",
     "noEmit": true,
     "paths": {
       "@/*": [
-        "./src/*"
+        "src/*"
       ]
     },
     "resolveJsonModule": true,
@@ -19,10 +19,10 @@
     "strict": true,
     "target": "ESNext",
     "types": [
-      "./src/index.d.ts"
+      "src/index.d.ts"
     ]
   },
   "include": [
-    "**/*.ts"
+    "src/**/*"
   ]
 }
