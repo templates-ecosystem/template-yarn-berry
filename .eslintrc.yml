@@ -1,0 +1,72 @@
+# 0 = "off"
+# 1 = "warn"
+# 2 = "error"
+env:
+  browser: true
+  es2022: true
+  node: true
+  # jest: true
+extends:
+  - eslint:recommended
+  - plugin:unicorn/all
+  - next
+parser: '@babel/eslint-parser'
+parserOptions:
+  ecmaFeatures:
+    jsx: true
+  ecmaVersion: 2022
+  sourceType: module
+rules:
+  #region eslint
+  arrow-body-style: 0
+  comma-dangle: [2, never]
+  consistent-return: 0
+  eol-last: 0
+  func-style: 0
+  indent: [2, 2, { SwitchCase: 1 }]
+    array-element-newline: 0
+  complexity: 0
+  line-comment-position: 0
+  max-len: 0
+  max-params: 0
+  max-lines-per-function: 0
+  max-statements: 0
+  multiline-comment-style: [error, separate-lines]
+  multiline-ternary: 0
+  no-console: 0
+  no-inline-comments: 0
+  no-magic-numbers: 0
+  no-nested-ternary: 0
+  no-plusplus: 0
+  no-restricted-globals: 0
+  no-tabs: 0
+  no-ternary: 0
+  no-undefined: 0
+  no-underscore-dangle: 0
+  object-curly-newline: 0
+  semi: [2, never]
+  sort-imports: 0
+  sort-keys: 0
+  #endregion
+
+  #region eslint-plugin-react
+  react/display-name: 0
+  react/function-component-definition: 0
+  react/jsx-filename-extension: 0
+  react/jsx-indent: [2, 2]
+  react/jsx-indent-props: [2, 2]
+  react/jsx-max-depth: 0
+  react/jsx-no-useless-fragment: 0
+  react/jsx-props-no-spreading: 0
+  react/no-multi-comp: 0
+  react/prop-types: 0
+  #endregion
+
+  #region eslint-plugin-unicorn
+  unicorn/empty-brace-spaces: 0
+  unicorn/filename-case: 0
+  unicorn/no-nested-ternary: 0
+  unicorn/prefer-dom-node-dataset: 0
+  unicorn/prevent-abbreviations: 0
+  unicorn/no-array-callback-reference: 0
+  #endregion
