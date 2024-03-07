@@ -5,16 +5,16 @@
   "types": "./src/index.d.ts",
   "license": "MIT",
   "type": "module",
-  "packageManager": "yarn@4.1.0",
+  "packageManager": "yarn@4.1.1",
   "scripts": {
     "start": "yarn node --import tsx/esm ./start.ts",
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^20.11.24",
+    "@types/node": "^20.11.25",
     "@yarnpkg/sdks": "^3.1.0",
     "tsx": "^4.7.1",
-    "typescript": "^5.3.3"
+    "typescript": "^5.4.2"
   },
   "engines": {
     "node": ">=18 || >=20"
