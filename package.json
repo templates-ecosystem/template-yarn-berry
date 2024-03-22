@@ -11,10 +11,10 @@
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^20.11.25",
+    "@types/node": "^20.11.30",
     "@yarnpkg/sdks": "^3.1.0",
     "tsx": "^4.7.1",
-    "typescript": "^5.4.2"
+    "typescript": "^5.4.3"
   },
   "engines": {
     "node": ">=18 || >=20"
