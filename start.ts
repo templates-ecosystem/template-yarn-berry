@@ -1,1 +1,1 @@
-import { } from '@/index.ts'
+import { } from './src/index.ts'

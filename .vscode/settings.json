@@ -1,5 +1,4 @@
 {
-  "css.validate": false,
   "editor.formatOnSave": true,
   "editor.insertSpaces": true,
   "editor.minimap.enabled": false,
@@ -10,14 +9,11 @@
   "eslint.packageManager": "yarn",
   "files.eol": "\n",
   "git.mergeEditor": false,
-  "less.validate": false,
   "search.exclude": {
-    "**/.next": true,
     "**/.pnp.*": true,
     "**/.yarn": true
   },
   "scm.showOutgoingChanges": "never",
-  "scss.validate": false,
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
   "typescript.enablePromptUseWorkspaceTsdk": true,
