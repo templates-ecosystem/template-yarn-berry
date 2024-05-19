@@ -5,18 +5,18 @@
   "types": "./src/index.d.ts",
   "license": "MIT",
   "type": "module",
-  "packageManager": "yarn@4.1.1",
+  "packageManager": "yarn@4.2.2",
   "scripts": {
     "start": "yarn node --import tsx/esm ./start.ts",
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^20.12.2",
-    "@yarnpkg/sdks": "^3.1.0",
-    "tsx": "^4.7.1",
-    "typescript": "^5.4.3"
+    "@types/node": "^20.12.12",
+    "@yarnpkg/sdks": "^3.1.2",
+    "tsx": "^4.10.5",
+    "typescript": "5.4.3"
   },
   "engines": {
-    "node": ">=18 || >=20"
+    "node": ">=18 || >=20 || >=22"
   }
 }
