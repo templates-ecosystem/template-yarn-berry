@@ -1,10 +1,10 @@
 # Install
-`yarn add yarn-berry-template`
+`yarn add template-yarn-berry`
 
 
 # Example
 ```ts
-import { <FUNCTION> } from 'yarn-berry-template'
+import { <FUNCTION> } from 'template-yarn-berry'
 
 await <FUNCTION>()
 ```
