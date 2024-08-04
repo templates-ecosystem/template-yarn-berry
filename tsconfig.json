@@ -7,7 +7,7 @@
     "forceConsistentCasingInFileNames": true,
     "isolatedModules": true,
     "module": "ESNext",
-    "moduleResolution": "Node",
+    "moduleResolution": "Bundler",
     "noEmit": true,
     "paths": {
       "@/*": [
@@ -19,7 +19,7 @@
     "strict": true,
     "target": "ESNext",
     "types": [
-      "src/index.d.ts"
+      "./src/index.d.ts"
     ]
   },
   "include": [
