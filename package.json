@@ -5,7 +5,7 @@
   "types": "./src/index.d.ts",
   "license": "MIT",
   "type": "module",
-  "packageManager": "yarn@4.4.0",
+  "packageManager": "yarn@4.4.1",
   "scripts": {
     "start": "yarn node --import tsx/esm ./start.ts",
     "od": "yarn outdated"
