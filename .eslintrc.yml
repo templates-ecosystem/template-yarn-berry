@@ -1,0 +1,61 @@
+# 0 = "off"
+# 1 = "warn"
+# 2 = "error"
+
+env:
+  browser: true
+  node: true
+extends:
+  - eslint:recommended
+  - plugin:unicorn/all
+  - plugin:@typescript-eslint/eslint-recommended
+  - plugin:@typescript-eslint/recommended
+  - plugin:import/recommended
+  - plugin:import/typescript
+
+parser: '@typescript-eslint/parser'
+parserOptions:
+  project: tsconfig.json
+plugins:
+  - '@typescript-eslint'
+
+rules:
+  #region eslint
+  comma-dangle: [1, never]
+  semi: [1, never]
+  #endregion
+
+  #region @typescript-eslint
+  '@typescript-eslint/no-explicit-any': 0
+  '@typescript-eslint/no-unused-vars': [
+    1,
+    {
+      argsIgnorePattern: '^_',
+      varsIgnorePattern: '^_',
+      caughtErrorsIgnorePattern: '^_'
+    }
+  ]
+  #endregion
+
+  #region unicorn
+  unicorn/filename-case: 0
+  unicorn/no-empty-file: 0
+  unicorn/no-keyword-prefix: 0
+  unicorn/no-null: 0
+  unicorn/numeric-separators-style: 0
+  unicorn/prevent-abbreviations: 0
+  #endregion
+
+settings:
+  import/parsers:
+    '@typescript-eslint/parser':
+      - .ts
+      - .tsx
+      - .d.ts
+  import/resolver:
+    node: # eslint-import-resolver-node
+      extensions:
+        - .ts
+        - .tsx
+    typescript: # eslint-import-resolver-typescript
+      alwaysTryTypes: true # always try to resolve types under `<root>@types` directory even it doesn't contain any source code, like `@types/unist`

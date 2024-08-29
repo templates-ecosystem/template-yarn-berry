@@ -8,11 +8,20 @@
   "packageManager": "yarn@4.4.1",
   "scripts": {
     "start": "yarn node --import tsx/esm ./start.ts",
+    "lint": "eslint .",
     "od": "yarn outdated"
   },
   "devDependencies": {
+    "@types/eslint": "^9",
     "@types/node": "^22.5.1",
+    "@typescript-eslint/eslint-plugin": "^8.3.0",
+    "@typescript-eslint/parser": "^8.3.0",
     "@yarnpkg/sdks": "^3.2.0",
+    "eslint": "^8.57.0",
+    "eslint-import-resolver-node": "^0.3.9",
+    "eslint-import-resolver-typescript": "^3.6.3",
+    "eslint-plugin-import": "^2.29.1",
+    "eslint-plugin-unicorn": "^55.0.0",
     "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   },
