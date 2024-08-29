@@ -11,9 +11,9 @@
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^22.1.0",
+    "@types/node": "^22.5.1",
     "@yarnpkg/sdks": "^3.2.0",
-    "tsx": "^4.16.5",
+    "tsx": "^4.19.0",
     "typescript": "^5.5.4"
   },
   "engines": {
