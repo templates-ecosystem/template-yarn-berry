@@ -27,18 +27,22 @@ rules:
 
   #region @typescript-eslint
   '@typescript-eslint/no-explicit-any': 0
-  '@typescript-eslint/no-unused-vars': [
-    1,
-    {
-      argsIgnorePattern: '^_',
-      varsIgnorePattern: '^_',
-      caughtErrorsIgnorePattern: '^_'
-    }
-  ]
+  '@typescript-eslint/no-unused-vars': [1, {
+    argsIgnorePattern: '^_',
+    varsIgnorePattern: '^_',
+    caughtErrorsIgnorePattern: '^_'
+  }]
   #endregion
 
   #region unicorn
   unicorn/filename-case: 0
+  unicorn/import-style: [2, {
+    styles: {
+      node:path: {
+        named: true
+      }
+    }
+  }]
   unicorn/no-empty-file: 0
   unicorn/no-keyword-prefix: 0
   unicorn/no-null: 0
