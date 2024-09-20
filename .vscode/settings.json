@@ -6,7 +6,6 @@
   "editor.tabSize": 2,
   "eslint.alwaysShowStatus": true,
   "eslint.nodePath": ".yarn/sdks",
-  "eslint.packageManager": "yarn",
   "files.eol": "\n",
   "git.mergeEditor": false,
   "search.exclude": {
