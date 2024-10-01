@@ -8,22 +8,17 @@
   "packageManager": "yarn@4.5.0",
   "scripts": {
     "start": "yarn node --import tsx/esm ./start.ts",
-    "lint": "eslint .",
+    "lint": "eslint src/**/*.{ts,tsx} *.ts",
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/eslint": "^8.56.12",
     "@types/node": "^22.5.5",
-    "@typescript-eslint/eslint-plugin": "^8.6.0",
-    "@typescript-eslint/parser": "^8.6.0",
     "@yarnpkg/sdks": "^3.2.0",
-    "eslint": "^8.57.1",
-    "eslint-import-resolver-node": "^0.3.9",
-    "eslint-import-resolver-typescript": "^3.6.3",
-    "eslint-plugin-import": "^2.30.0",
+    "eslint": "^9.11.1",
     "eslint-plugin-unicorn": "^55.0.0",
     "tsx": "^4.19.1",
-    "typescript": "5.5.4"
+    "typescript": "5.5.4",
+    "typescript-eslint": "^8.8.0"
   },
   "engines": {
     "node": ">=20 || >=22"
