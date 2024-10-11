@@ -1,1 +1,3 @@
-import { } from './src/index.ts'
+import { log } from './src/index.ts'
+
+log('Started!')

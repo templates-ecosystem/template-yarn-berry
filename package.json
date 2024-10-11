@@ -18,7 +18,7 @@
     "dist"
   ],
   "scripts": {
-    "start": "yarn node --import tsx/esm ./start.ts",
+    "start": "tsx ./start.ts",
     "lint": "eslint src/**/*.{ts,tsx} *.ts",
     "build": "pkgroll",
     "od": "yarn outdated",
