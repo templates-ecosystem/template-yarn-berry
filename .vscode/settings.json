@@ -9,7 +9,8 @@
   "git.mergeEditor": false,
   "search.exclude": {
     "**/.pnp.*": true,
-    "**/.yarn": true
+    "**/.yarn": true,
+    "dist": true
   },
   "terminal.integrated.defaultProfile.windows": "Command Prompt",
   "typescript.tsdk": ".yarn/sdks/typescript/lib",
