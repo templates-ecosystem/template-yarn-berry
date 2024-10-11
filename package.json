@@ -21,8 +21,8 @@
     "start": "tsx ./start.ts",
     "lint": "eslint src/**/*.{ts,tsx} *.ts",
     "build": "pkgroll",
-    "od": "yarn outdated",
-    "prepublishOnly": "yarn build"
+    "prepublishOnly": "yarn build",
+    "od": "yarn outdated"
   },
   "devDependencies": {
     "@types/node": "^22.7.5",
