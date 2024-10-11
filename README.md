@@ -1,10 +1,19 @@
-# Install
-`yarn add template-yarn-berry`
+# template-yarn-berry
+Stack:
+- Yarn Berry
+- TypeScript
+- ESLint
+- pkgroll
+
+## Install
+```sh
+yarn add template-yarn-berry
+```
 
 
-# Example
+## Example
 ```ts
 import { <FUNCTION> } from 'template-yarn-berry'
 
-await <FUNCTION>()
+<FUNCTION>()
 ```
