@@ -5,13 +5,13 @@ Stack:
 - ESLint
 - pkgroll
 
-## Install
+## Installation
 ```sh
 yarn add template-yarn-berry
 ```
 
 
-## Example
+## Usage
 ```ts
 import { <FUNCTION> } from 'template-yarn-berry'
 
