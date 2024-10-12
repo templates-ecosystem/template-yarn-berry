@@ -24,7 +24,7 @@ const generateReleaseNotes = async ({ github, owner, repo, versionTag, defaultBr
   return bodyWithoutReleasePr
 }
 
-const release = async ({ github, context, defaultBranch, versionTag }) => {
+module.exports = function release({ github, context, defaultBranch, versionTag }) {
   const { owner, repo } = context.repo
   const releaseNotes = await generateReleaseNotes({ github, owner, repo, versionTag, defaultBranch })
 
@@ -51,5 +51,3 @@ const release = async ({ github, context, defaultBranch, versionTag }) => {
     console.log(error)
   }
 }
-
-export default release
