@@ -34,4 +34,7 @@ jobs:
             const { owner, repo } = context.repo
             const version = require("./package.json").version
             const versionTag = `v${version}`
-            await release({ github, context, defaultBranch, versionTag })
+            release({ github, context, defaultBranch, versionTag }).then(() => {
+              console.log(`Release ${versionTag} created`)
+            })
+
