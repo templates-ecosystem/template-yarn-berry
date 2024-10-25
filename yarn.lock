@@ -682,12 +682,12 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@types/node@npm:*, @types/node@npm:^22.7.9":
-  version: 22.7.9
-  resolution: "@types/node@npm:22.7.9"
+"@types/node@npm:*, @types/node@npm:^22.8.0":
+  version: 22.8.0
+  resolution: "@types/node@npm:22.8.0"
   dependencies:
-    undici-types: "npm:~6.19.2"
-  checksum: 10c0/2d1917702b9d9ede8e4d8151cd8b1af8bc147d543486474ffbe0742e38764ea73105939e6a767addf7a4c39e842e16eae762bff90617d7b7f9ee3fbbb2d23bfa
+    undici-types: "npm:~6.19.8"
+  checksum: 10c0/21eb10cee768d32e965d095415a4c6a7752f26bfcc34a8c1d7ab3989a6ab13a51761cc245909570d59c6bdacbdfd055d307dc6b201ac04305c57e65c1e7bf5be
   languageName: node
   linkType: hard
 
@@ -2798,9 +2798,9 @@ __metadata:
   languageName: node
   linkType: hard
 
-"pkgroll@npm:^2.5.0":
-  version: 2.5.0
-  resolution: "pkgroll@npm:2.5.0"
+"pkgroll@npm:^2.5.1":
+  version: 2.5.1
+  resolution: "pkgroll@npm:2.5.1"
   dependencies:
     "@rollup/plugin-alias": "npm:^5.1.0"
     "@rollup/plugin-commonjs": "npm:^26.0.1"
@@ -2819,7 +2819,7 @@ __metadata:
       optional: true
   bin:
     pkgroll: dist/cli.js
-  checksum: 10c0/9fe0ba5b8f35d04e4fcc4ec34239c480c2610cb2021caf8014a718ff0e8b00dbdaf41d57816f0ca143b42c73cedc5ac6cc2d5ee911a22bdcd364e857d92327dc
+  checksum: 10c0/15c1dcb982c27056579f27615f49366bca634df19450e7eb1b44d2ac86ebe80266e4ec5b419190c0cf591a7acf839c22f9029749e15ec7d6736b3ceb8660e896
   languageName: node
   linkType: hard
 
@@ -3309,11 +3309,11 @@ __metadata:
   version: 0.0.0-use.local
   resolution: "template-yarn-berry@workspace:."
   dependencies:
-    "@types/node": "npm:^22.7.9"
+    "@types/node": "npm:^22.8.0"
     "@yarnpkg/sdks": "npm:^3.2.0"
     eslint: "npm:^9.13.0"
     eslint-plugin-unicorn: "npm:^56.0.0"
-    pkgroll: "npm:^2.5.0"
+    pkgroll: "npm:^2.5.1"
     tsx: "npm:^4.19.1"
     typescript: "npm:^5.6.3"
     typescript-eslint: "npm:^8.11.0"
@@ -3453,7 +3453,7 @@ __metadata:
   languageName: node
   linkType: hard
 
-"undici-types@npm:~6.19.2":
+"undici-types@npm:~6.19.8":
   version: 6.19.8
   resolution: "undici-types@npm:6.19.8"
   checksum: 10c0/078afa5990fba110f6824823ace86073b4638f1d5112ee26e790155f481f2a868cc3e0615505b6f4282bdf74a3d8caad715fd809e870c2bb0704e3ea6082f344
