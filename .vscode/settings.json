@@ -9,7 +9,10 @@
   "files.insertFinalNewline": true,
   "git.mergeEditor": false,
   "search.exclude": {
+    "**/.github": true,
     "**/.pnp.*": true,
+    "**/.vite": true,
+    "**/.vscode": true,
     "**/.yarn": true,
     "dist": true
   },
