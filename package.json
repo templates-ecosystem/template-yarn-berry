@@ -11,11 +11,11 @@
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/rtritto/template-yarn-berry.git"
+    "url": "git+https://github.com/templates-ecosystem/template-yarn-berry.git"
   },
-  "homepage": "https://github.com/rtritto/template-yarn-berry#readme",
+  "homepage": "https://github.com/templates-ecosystem/template-yarn-berry#readme",
   "bugs": {
-    "url": "https://github.com/rtritto/template-yarn-berry/issues"
+    "url": "https://github.com/templates-ecosystem/template-yarn-berry/issues"
   },
   "files": [
     "dist"

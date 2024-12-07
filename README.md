@@ -12,7 +12,7 @@
 
 ### ⬇️ Clone
 ```sh
-git clone https://github.com/rtritto/template-yarn-berry.git
+git clone https://github.com/templates-ecosystem/template-yarn-berry.git
 ```
 
 ### ⚙️ Install
