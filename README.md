@@ -2,12 +2,12 @@
 
 ### 📚 Template stack
 - **Yarn Berry**
-- **TypeScript**
 - **ESLint**
 - **pkgroll**
+- **TypeScript**
 
 <a href="https://github.com/tandpfun/skill-icons">
-  <img align="center" src="https://skillicons.dev/icons?i=yarn,ts&theme=dark" />
+  <img align="center" src="https://skills-icons.vercel.app/api/icons?i=yarn,eslint,pkgroll,ts" />
 </a>
 
 ### ⬇️ Clone
