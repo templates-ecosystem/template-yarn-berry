@@ -28,14 +28,14 @@
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^22.10.7",
+    "@types/node": "^22.13.5",
     "@yarnpkg/sdks": "^3.2.0",
-    "eslint": "^9.18.0",
+    "eslint": "^9.21.0",
     "eslint-plugin-unicorn": "^56.0.1",
-    "pkgroll": "^2.6.1",
-    "tsx": "^4.19.2",
-    "typescript": "5.7.2",
-    "typescript-eslint": "^8.20.0"
+    "pkgroll": "^2.11.0",
+    "tsx": "^4.19.3",
+    "typescript": "5.7.3",
+    "typescript-eslint": "^8.24.1"
   },
   "engines": {
     "node": ">=22"
