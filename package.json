@@ -28,9 +28,9 @@
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^22.13.9",
+    "@types/node": "^22.13.10",
     "@yarnpkg/sdks": "^3.2.1",
-    "eslint": "^9.21.0",
+    "eslint": "^9.22.0",
     "eslint-plugin-unicorn": "^57.0.0",
     "pkgroll": "^2.11.2",
     "tsx": "^4.19.3",
