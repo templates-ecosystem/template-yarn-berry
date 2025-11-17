@@ -28,17 +28,17 @@
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^24.5.2",
+    "@types/node": "^24.10.1",
     "@yarnpkg/sdks": "^3.2.3",
-    "eslint": "^9.35.0",
-    "eslint-plugin-unicorn": "^61.0.2",
-    "pkgroll": "^2.15.4",
-    "tsx": "^4.20.5",
-    "typescript": "^5.9.2",
-    "typescript-eslint": "^8.44.0"
+    "eslint": "^9.39.1",
+    "eslint-plugin-unicorn": "^62.0.0",
+    "pkgroll": "^2.20.1",
+    "tsx": "^4.20.6",
+    "typescript": "^5.9.3",
+    "typescript-eslint": "^8.46.4"
   },
   "engines": {
     "node": ">=22"
   },
-  "packageManager": "yarn@4.10.1"
+  "packageManager": "yarn@4.11.0"
 }
