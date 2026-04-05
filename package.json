@@ -23,7 +23,7 @@
   "scripts": {
     "start": "tsx ./start.ts",
     "lint": "eslint src/**/*.{ts,tsx} *.ts",
-    "build": "pkgroll",
+    "build": "tsdown",
     "prepublishOnly": "yarn build",
     "od": "yarn outdated"
   },
@@ -32,7 +32,7 @@
     "@yarnpkg/sdks": "^3.2.3",
     "eslint": "^10.2.0",
     "eslint-plugin-unicorn": "^64.0.0",
-    "pkgroll": "^2.21.5",
+    "tsdown": "^0.21.7",
     "tsx": "^4.21.0",
     "typescript": "^6.0.2",
     "typescript-eslint": "^8.58.0"
