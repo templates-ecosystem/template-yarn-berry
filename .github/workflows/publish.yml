@@ -23,12 +23,12 @@ jobs:
         with:
           node-version: 24
           registry-url: 'https://registry.npmjs.org'
+      - name: Install dependencies & build
+        run: yarn install && yarn build
       - name: Create NPM release
         run: npm publish --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
-      - name: Install dependencies & build
-        run: yarn install && yarn build
       - name: Create GitHub release
         uses: actions/github-script@v8
         with:
@@ -58,25 +58,28 @@ jobs:
 
               const features = []
               const fixes = []
-              const breaking =[]
+              const breaking = []
+
+              const getEntry = (firstLine, sha) => {
+                const cleanedMessage = firstLine.replace(/^[a-zA-Z]+(?:\([^)]+\))?!?:\s*/, '')
+                const shortSha = sha.substring(0, 7)
+                return `- ${cleanedMessage} (${shortSha})`
+              }
 
               // Split commits by standard Conventional Commits
               for (const { commit, sha } of comparison.commits) {
                 const firstLine = commit.message.split('\n')[0].trim()
-                const shortSha = sha.substring(0, 7)
-                const entry = `- ${firstLine} (${shortSha})`
-
                 // Breaking Changes "!" before the colon, e.g. "feat!:"
                 if (/^[a-zA-Z]+(?:\([^)]+\))?!:/.test(firstLine)) {
-                  breaking.push(entry)
+                  breaking.push(getEntry(firstLine, sha))
                 }
                 // Features with prefix "feat:" or "feat(scope):"
                 else if (/^feat(?:\([^)]+\))?:/.test(firstLine)) {
-                  features.push(entry)
+                  features.push(getEntry(firstLine, sha))
                 } 
                 // Bug Fixes with prefix "fix:" or "fix(scope):"
                 else if (/^fix(?:\([^)]+\))?:/.test(firstLine)) {
-                  fixes.push(entry)
+                  fixes.push(getEntry(firstLine, sha))
                 }
               }
 
@@ -93,4 +96,5 @@ jobs:
               name: versionTag,
               body: releaseNotes.trim()
             })
+
             console.log(`Release ${versionTag} created`)
