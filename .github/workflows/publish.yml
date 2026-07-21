@@ -17,11 +17,11 @@ jobs:
       id-token: write
     environment: release
     steps:
-      - uses: actions/checkout@v6
+      - uses: actions/checkout@v7
       - name: Install Node
-        uses: actions/setup-node@v6
+        uses: actions/setup-node@v7
         with:
-          node-version: 24
+          node-version: 26
           registry-url: 'https://registry.npmjs.org'
       - name: Install dependencies & build
         run: yarn install && yarn build
@@ -30,7 +30,7 @@ jobs:
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
       - name: Create GitHub release
-        uses: actions/github-script@v8
+        uses: actions/github-script@v9
         with:
           script: |
             const { owner, repo } = context.repo
@@ -69,17 +69,21 @@ jobs:
               // Split commits by standard Conventional Commits
               for (const { commit, sha } of comparison.commits) {
                 const firstLine = commit.message.split('\n')[0].trim()
+                const cleanedMessage = firstLine.replace(/^[a-zA-Z]+(?:\([^)]+\))?!?:\s*/, '')
+                const shortSha = sha.substring(0, 7)
+                const entry = `- ${cleanedMessage} (${shortSha})`
+
                 // Breaking Changes "!" before the colon, e.g. "feat!:"
                 if (/^[a-zA-Z]+(?:\([^)]+\))?!:/.test(firstLine)) {
-                  breaking.push(getEntry(firstLine, sha))
+                  breaking.push(entry)
                 }
                 // Features with prefix "feat:" or "feat(scope):"
                 else if (/^feat(?:\([^)]+\))?:/.test(firstLine)) {
-                  features.push(getEntry(firstLine, sha))
+                  features.push(entry)
                 } 
                 // Bug Fixes with prefix "fix:" or "fix(scope):"
                 else if (/^fix(?:\([^)]+\))?:/.test(firstLine)) {
-                  fixes.push(getEntry(firstLine, sha))
+                  fixes.push(entry)
                 }
               }
 
