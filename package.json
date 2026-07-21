@@ -28,13 +28,13 @@
     "od": "yarn outdated"
   },
   "devDependencies": {
-    "@types/node": "^26.0.0",
+    "@types/node": "^26.1.1",
     "@yarnpkg/sdks": "^3.3.0",
-    "eslint": "^10.5.0",
-    "eslint-plugin-unicorn": "^68.0.0",
-    "tsdown": "^0.22.3",
+    "eslint": "^10.7.0",
+    "eslint-plugin-unicorn": "^72.0.0",
+    "tsdown": "^0.22.13",
     "typescript": "^6.0.3",
-    "typescript-eslint": "^8.62.0"
+    "typescript-eslint": "^8.65.0"
   },
   "engines": {
     "node": ">=22"
