@@ -26,3 +26,7 @@ import { <FUNCTION> } from 'template-yarn-berry'
 
 <FUNCTION>()
 ```
+
+### 📜 License
+
+[MIT](LICENSE)
